@@ -110,8 +110,26 @@ public class Series {
 
     public void catComedia(){
         for (Series serie:listaSeries) {
-            if (getCategoría() == "Comedia" ){
+            if (serie.getCategoría().equalsIgnoreCase("comedia") ){
                 System.out.println("Series de comedia: ");
+                System.out.println(serie);
+            }
+        }
+    }
+
+    public void catRomance(){
+        for (Series serie:listaSeries) {
+            if (serie.getCategoría().equalsIgnoreCase("romance") ){
+                System.out.println("Series de romance: ");
+                System.out.println(serie);
+            }
+        }
+    }
+
+    public void catDrama(){
+        for (Series serie:listaSeries) {
+            if (serie.getCategoría().equalsIgnoreCase("drama") ){
+                System.out.println("Series de drama: ");
                 System.out.println(serie);
             }
         }

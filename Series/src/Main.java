@@ -22,5 +22,7 @@ public class Main {
         serie.menor15();
         serie.mayor40();
         serie.catComedia();
+        serie.catRomance();
+        serie.catDrama();
     }
 }
